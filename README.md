@@ -14,6 +14,8 @@ The payoff of a given action is equivalent to the predicted results of that acti
 
 The goals that an agent chooses to pursue are selected using a competitive process, where each goal applies a suppressive force to the rest, in hopes of becoming the “most-active” goal and receiving the highest perceived importance from the agent, thus maximizing its own perceived priority and minimizing the priority of all other goals. 
 
+![](https://github.com/CarsonScott/Knowledge-Discovery-Agents/blob/master/Activity%20Diagram3.png)
+
 ## Feedback, Conformity, and Seeking Approval
 
 Agents produce one-dimensional signals over time. An agent can alter the output signal via motors. Motors are convolution functions that are applied over the output signal when activated. Signals from other agents are observed by receivers that convert signals from other agents into data sets to be processed. An agent can alter the input signal via convolutional motors as well. 
