@@ -1,4 +1,4 @@
-# A Goal-Oriented Approach to Multi-Agent Knowledge Discovery
+# A Goal-Oriented Approach to Knowledge Discovery in Multi-Agent Systems
 
 ## Signals, Cooperation, and Sharing Knowledge
 
