@@ -1,6 +1,6 @@
 # A Goal-Oriented Approach to Knowledge Discovery in Multi-Agent Systems
 
-## Signals, Cooperation, and Sharing Knowledge
+## Messages, Cooperation, and Sharing Knowledge
 
 An agent is a knowledge-seeking system that stores and communicates information to/from a social environment, which is a network of communication lines that transmit signals between agents. If an agent does not recognize the information received, it sets a goal to obtain information that might lead to a clearer understanding.
 
@@ -16,12 +16,11 @@ An agent's goals revolve around knowledge discovery, meaning it is driven to obt
 
 ## Feedback, Conformity, and Seeking Approval
 
-Agents produce messages over time. The agents must adapt their ability to construct message in order to communicate information between one another. An agent’s drive toward knowledge discovery manifests initially as exploratory stochastic behavior and immediate feedback monitoring. 
+Agents send and recieve messages over time. The agents must adapt their ability to construct message in order to communicate information between one another. An agent’s drive toward knowledge discovery manifests initially as exploratory stochastic behavior and immediate feedback monitoring. 
 
 Another drive that plays an important role at this stage is the power drive, which motivates the agent to exert control over its environment. This manifests as the desire for attention, which may be achieved by sending signals and observing feedback. The agent adaptively selects outputs that yield the highest amount of feedback from neighboring agents.
 
-
-## Society, Norms, and Constructing Sentences
+## Culture, Normalization, and Maintaining Order 
 
 Specific input patterns can cause internal events to trigger within another agent. For example, the language-building system used to construct sentences may be triggered externally by another agent, whose signal patterns activate the receiving agent’s language system. An agent’s resistance to external signals is very weak at the initial stage but over time becomes stronger, resulting in an agent who’s highly self-driven and less influenced by the environment.
 
