@@ -2,25 +2,21 @@
 
 ## Signals, Cooperation, and Sharing Knowledge
 
-An agent is a knowledge-seeking system that stores and communicates information to/from a social environment, which is a network of communication lines that transmit signals between agents. If an agent does not recognize the information received as input, a new goal is created by the agent to obtain the missing knowledge.
+An agent is a knowledge-seeking system that stores and communicates information to/from a social environment, which is a network of communication lines that transmit signals between agents. If an agent does not recognize the information received, it sets a goal to obtain information that might lead to a clearer understanding.
 
-It accomplished this by either searching its own memory for useful data, or by reaching out to the neighboring agents to see if they have access to the desired knowledge. The agent either receives the missing information from another agent, or some indication that the desired knowledge is not likely held by any agent in the surrounding regions.
+Agents accomplish these information-seeking goals by reaching out to other agents for help. An agent might send a request to a neighbor, who may or may not have the desired information. If the recieving agent does not have the information, a request may be sent out to one of its own neighbors, and so on. This is called a 'request chain'.
+
+Once the information is found, it is passed from agent-to-agent down the request chain, until the root agent receives the requested information. If the information is not found, or if the requested agent declines, the requester agent has the choice of whether or not to continue pursuing the goal. If the information is important, then there's a higher chance that the agent will continue sending requests to other agents, and therefore a higher chance that the goal is achieved.
 
 ## Goals, Competition, and Seeking Knowledge
 
-An agent’s goals are fundamentally information-seeking in nature, which drives the agent to obtain knowledge that it does not already have. In other words, behavior is driven by the unknown, and actions are selected with respect to a utility function, which determines the expected payoff for an action. 
-
-The payoff of a given action is equivalent to the predicted results of that action with respect to a set of goals, or desired information, that the agent is currently seeking. Thus an action will yield a higher payoff if it results in obtaining some desired information, and consequently the reduction of the associated drive which determines the perceived importance of that goal at any given time, with respect to all other active goals.
-
-The goals that an agent chooses to pursue are selected using a competitive process, where each goal applies a suppressive force to the rest, in hopes of becoming the “most-active” goal and receiving the highest perceived importance from the agent, thus maximizing its own perceived priority and minimizing the priority of all other goals. 
+An agent's goals revolve around knowledge discovery, meaning it is driven to obtain knowledge that it does not have. The payoff of any given action is equivalent to the predicted results of that action, with respect to the active set of goals. Therefore actions that result in new information being discovered will tend to have a higher payoff, especially when the new information matches that of a current goal. Current goals are selected based on the percieved importance of obtaining certain information.  
 
 ![](https://github.com/CarsonScott/Knowledge-Discovery-Agents/blob/master/Activity%20Diagram3.png)
 
 ## Feedback, Conformity, and Seeking Approval
 
-Agents produce one-dimensional signals over time. An agent can alter the output signal via motors. Motors are convolution functions that are applied over the output signal when activated. Signals from other agents are observed by receivers that convert signals from other agents into data sets to be processed. An agent can alter the input signal via convolutional motors as well. 
-
-The agents adapt their ability to construct sentences (signals) in order to communicate information between one another. An agent’s drive toward knowledge discovery manifests in the initial stage through stochastic exploratory behavior and constant feedback monitoring. 
+Agents produce messages over time. The agents must adapt their ability to construct message in order to communicate information between one another. An agent’s drive toward knowledge discovery manifests initially as exploratory stochastic behavior and immediate feedback monitoring. 
 
 Another drive that plays an important role at this stage is the power drive, which motivates the agent to exert control over its environment. This manifests as the desire for attention, which may be achieved by sending signals and observing feedback. The agent adaptively selects outputs that yield the highest amount of feedback from neighboring agents.
 
