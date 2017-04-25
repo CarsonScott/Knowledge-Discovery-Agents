@@ -25,3 +25,34 @@ Another drive that plays an important role at this stage is the power drive, whi
 Specific input patterns can cause internal events to trigger within another agent. For example, the language-building system used to construct sentences may be triggered externally by another agent, whose signal patterns activate the receiving agent’s language system. An agent’s resistance to external signals is very weak at the initial stage but over time becomes stronger, resulting in an agent who’s highly self-driven and less influenced by the environment.
 
 The system eventually conforms to a set of collectively-established behavioral norms. Conformity is essential to maintaining order within social systems. Conformity exerts a suppressive force on individuals that behave in a way that deviates from the social, political, or ideological standards of the society. These “taboo” individuals may pose a threat to the population itself, or it may pose a threat to the current stability/organization of the societal system, for instance the distribution of resources across various social classes within the population.
+
+## Memory, Communication, and Extracting Messages
+
+An agent has a knowledge base called memory that stores information which can be accessed using keywords. Each element of memory contains a keyword and a value. A keyword acts as a label for tithe associated value in memory. 
+
+An agent observes a stream of characters over time. Certain combinations of characters are recognized as messages. A message describes an action that the agent may or may not choose to perform. Messages contain an operator symbol, along with either two keywords or one keyword and one value. A message is an operation that manipulates the data in an agent’s memory. Each message has a type that is signified by the operator. Statements are messages that alter the stored values in memory. The possible types of statements are as follows:
+
+1)	Definition
+2)	Addition
+3)	Subtraction
+4)	Multiplication
+5)	Division
+6)	Exponent 
+
+Questions are messages that retrieve information about the stored values in memory. The possible types of questions are as follows:
+
+7)	What Is
+8)	Is
+9)	Is Not
+10)	Is Above
+11)	Is Below
+
+Messages must be extracted from streaming input, where a single character is received at each time step. An agent constructs a message, or set of strings containing the individual components of a message, from the streaming input. Example:
+
+Input:	      ‘x=5;’
+
+Message:    ['x', '=', '5']
+
+A message is constructed by searching for 'indicators', or symbols that trigger certain state-transitions, depending on the current state. The initial state is -1, meaning no message is currently being constructed. Once any characters are received, the state becomes 0. 
+
+Characters received in 0 are stored in the first element of the message, until the input character matches an operator symbol. This is an indicator that triggers the current state to change from 0 to 1.  Characters received in 1 are stored in the second element of the message, until a non-operator symbol is received. This triggers the state to change from 1 to 2. Characters received in 2 are stored in the second element of the message, until a stop symbol (;) is received. The agent exits the construction stage and begins the execution stage. If the message is valid, a set of outputs (if any) is returned, and the keywords contained in the message are stored in a buffer, which is a finite set of recently active keywords analogous to short-term memory.
