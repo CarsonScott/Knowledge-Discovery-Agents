@@ -56,3 +56,13 @@ Message:    ['x', '=', '5']
 A message is constructed by searching for 'indicators', or symbols that trigger certain state-transitions, depending on the current state. The initial state is -1, meaning no message is currently being constructed. Once any characters are received, the state becomes 0. 
 
 Characters received in 0 are stored in the first element of the message, until the input character matches an operator symbol. This is an indicator that triggers the current state to change from 0 to 1.  Characters received in 1 are stored in the second element of the message, until a non-operator symbol is received. This triggers the state to change from 1 to 2. Characters received in 2 are stored in the second element of the message, until a stop symbol (;) is received. The agent exits the construction stage and begins the execution stage. If the message is valid, a set of outputs (if any) is returned, and the keywords contained in the message are stored in a buffer, which is a finite set of recently active keywords analogous to short-term memory.
+
+## Output, Rehearsal, and Constructing Messages
+
+When an object is stored in the buffer, semantic connections between themselves and the other objects in the buffer are strengthened, resulting in greater semantic relevance between them. Semantic relevance refers to the geodesic distance between the nodes in a semantic net that correspond to stored objects in the buffer.
+
+Output messages are constructed from available objects in the buffer. Objects are selected from the buffer and removed, and the semantic net receives an input which activates the nodes corresponding to the selected objects. The inputs propagate from node-to-node across semantic connections, and the set of nodes that become active are stored in the buffer. Essentially, this process is a seeding function, which allows access to knowledge that has not been activated by external stimuli.
+
+Once the output message is constructed and sent, the objects contained in the message are sent back to the buffer, which is very similar to the psychological concept of rehearsal. Rehearsal occurs when an element of short-term memory is removed and then quickly placed back in as a new element. 
+
+This is necessary for quicker learning in spite of the STM’s limited capacity. When an object is rehearsed, the elapsed time since it was stored in the STM resets, extending the object’s total time in STM, and therefore strengthening the connections in the semantic net between the rehearsed object and every other stored object in the STM.
