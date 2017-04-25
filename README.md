@@ -12,7 +12,7 @@ Once the information is found, it is passed from agent-to-agent down the request
 
 An agent's goals revolve around knowledge discovery, meaning it is driven to obtain knowledge that it does not have. The payoff of any given action is equivalent to the predicted results of that action, with respect to the active set of goals. Therefore actions that result in new information being discovered will tend to have a higher payoff, especially when the new information matches that of a current goal. Current goals are selected based on the percieved importance of obtaining certain information.  
 
-![](https://github.com/CarsonScott/Knowledge-Discovery-Agents/blob/master/Activity%20Diagram3_01_02.png)
+![Agent Structure](https://github.com/CarsonScott/Knowledge-Discovery-Agents/blob/master/newimage.png)
 
 ## Feedback, Conformity, and Seeking Approval
 
