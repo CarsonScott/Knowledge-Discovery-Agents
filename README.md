@@ -22,8 +22,6 @@ Another drive that plays an important role at this stage is the power drive, whi
 
 ## Culture, Normalization, and Maintaining Order 
 
-Specific input patterns can cause internal events to trigger within another agent. For example, the language-building system used to construct sentences may be triggered externally by another agent, whose signal patterns activate the receiving agent’s language system. An agent’s resistance to external signals is very weak at the initial stage but over time becomes stronger, resulting in an agent who’s highly self-driven and less influenced by the environment.
-
 The system eventually conforms to a set of collectively-established behavioral norms. Conformity is essential to maintaining social order within a system because it exerts a suppressive force on individuals who behave in a way which deviates from social, political, or ideological standards of society. These individuals are labeled taboo and thus pose a threat to the wellbeing of others, or more importantly to the organization and stability of the current social system, namely the distribution of resources across various social classes within the population.
 
 ## Memory, Communication, and Extracting Messages
